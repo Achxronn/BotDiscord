@@ -23,3 +23,15 @@ client.on(Events.InteractionCreate, async (interaction) => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("BOT ALIVE!!!");
+});
+
+app.listen(port, () => {
+  console.log(`Web server listening on port ${port}`);
+});
