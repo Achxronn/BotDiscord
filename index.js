@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-const waifu = ["Herta", "Acheron", "Zani"];
+const waifu = ["Herta", "Acheron", "Zani", "Kafka"];
 
 client.on(Events.ClientReady, (readyClient) => {
   console.log(`Logged in as ${readyClient.user.tag}!`);
