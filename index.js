@@ -1,5 +1,6 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
 import dotenv from "dotenv";
+import express from "express";
 
 dotenv.config();
 
@@ -24,7 +25,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
 client.login(process.env.DISCORD_TOKEN);
 
-const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
